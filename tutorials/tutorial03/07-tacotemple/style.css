@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+section{
+display: flex;
+flex-direction: row;
+border-style: solid;
+border-color: black;
+padding: 20px;
+}
+
