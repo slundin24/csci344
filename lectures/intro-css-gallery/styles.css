@@ -13,3 +13,8 @@ section {
     border-width: 1px;
     border-style: solid;
 }
+
+section {
+    display: inline-block;
+    padding-top: 50px;
+}
