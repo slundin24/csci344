@@ -1,9 +1,18 @@
+let currentFontSize = 16;
+
 const makeBigger = () => {
-   alert('make bigger!');
+   currentFontSize +=4;
+   document.body.style.fontSize = currentFontSize + 'px';
+   document.querySelector('h1').style.fontSize = currentFontSize + 'px';
+   document.querySelector('.content').style.fontSize = currentFontSize + 'px';
+
 };
 
 const makeSmaller = () => {
-   alert('make smaller!');
+   currentFontSize -=4;
+   document.body.style.fontSize = currentFontSize + 'px';
+   document.querySelector('h1').style.fontSize = currentFontSize + 'px';
+   document.querySelector('.content').style.fontSize = currentFontSize + 'px';
 };
 
 /*

@@ -1,18 +1,22 @@
 const defaultTheme = ev => {
     // your code here.
+  document.body.className = 'default'
     
 };
 
 const oceanTheme = ev => {
    // your code here.
+   document.body.className = 'ocean'
 };
 
 const desertTheme = ev => {
    // your code here.
+   document.body.className = 'desert'
 };
 
 const highContrastTheme = ev => {
     // your code here.
+    document.body.className = 'high-contrast'
 }; 
 
 /*
