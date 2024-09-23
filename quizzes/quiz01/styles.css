@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header {
+    background-color: #013672;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-content:space-between;
+   
+    
+}
+
+header nav{
+display: flex;
+align-items: center;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 15px;
+}
+
+
+
+header img,
+footer img {
+    width: 200px;
+}
+
+h1,h2,h3{
+    font-family: "Passion one";
+}
+
+h1{
+   text-align: center;
+}
+
+h1,h2{
+    margin-top: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+    }
+
+/* .card{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+} */
+
+.card{  
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px, solid;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    }
+
+.card img{
+    width: 80%;
+    
+}
+
+@media (max-width: 800px) {
+    nav{
+        display:none;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
