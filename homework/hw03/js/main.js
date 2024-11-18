@@ -211,11 +211,16 @@ function showComments(comments) {
 
 function getLikeButton(post) {
     console.log(post.current_user_like_id);
-  let iconClass = "far";
-  if (post.current_user_like_id) {
-    iconClass = "fa-solid text-red-700";
-  }
-  return `<button aria-label="heart" ><i class="${iconClass} fa-heart"></i></button>`;
+    
+    if (post.current_user_like_id) {
+      return `<button onclick="deleteHeart(${post.current_user_like_id})"><i class="fa-solid fa-heart text-red-500" aria-label="heart" ></i></button>`;
+    } else {
+      return `
+      <button aria-label="heartss" onclick="createHeart(${post.id})">
+      <i class="far fa-heart"></i>
+       </button>`;
+    }
+  
 }
 
 function getBookmarkButton(post) {
