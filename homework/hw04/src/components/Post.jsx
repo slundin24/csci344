@@ -2,7 +2,7 @@ import React from "react";
 import Bookmark from "./Bookmark";
 import Like from "./Like";
 
-export default function Post({postData}){
+export default function Post({postData, token}){
  console.log(postData);
 return (
     <section className="bg-white border mb-10">
@@ -23,7 +23,7 @@ return (
                     </div>
                     <div>
                        
-                        <Bookmark bookmarkId={postData.current_user_bookmark_id}/>
+                        <Bookmark bookmarkId={postData.current_user_bookmark_id} postId={postData.id} token={token}/>
                     </div>
                 </div>
                 <p className="font-bold mb-3">{postData.likes.length} likes</p>

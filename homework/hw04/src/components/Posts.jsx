@@ -15,7 +15,7 @@ export default function Posts({ token }) {
     }, []);
 
    function outputPost(postObj){
-    return <Post key={postObj.id} postData={postObj}/>
+    return <Post token={token} key={postObj.id} postData={postObj}/>
    }
 
 
