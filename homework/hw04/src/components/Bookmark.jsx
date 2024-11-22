@@ -33,10 +33,6 @@ console.log(responseData);
 setStateBookmarkId(null);
 }
     
-
-
-
-
     if(stateBookmarkId){
 
     return(

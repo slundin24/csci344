@@ -17,7 +17,7 @@ return (
                 <div className="flex justify-between text-2xl mb-3">
                     <div className="flex gap-2">
                        
-                        <Like likeId={postData.current_user_like_id}/>
+                        <Like likeId={postData.current_user_like_id} postId={postData.id} token={token}/>
                         <button><i className="far fa-comment"></i></button>
                         <button><i className="far fa-paper-plane"></i></button>
                     </div>
