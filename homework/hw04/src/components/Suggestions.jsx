@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getDataFromServer } from "../server-requests";
 import Suggestion from "./Suggestion.jsx";
 
+// Fetch the suggestions data from the server and use the map function to display each suggestion
 export default function Suggestions({ token }) {
     const [suggestions, setSuggestions] = useState([]);
 
@@ -17,11 +18,11 @@ export default function Suggestions({ token }) {
     }, []);
 
     function outputSuggestion(suggestionObj){
-        return <Suggestion token={token} key={suggestionObj.id} suggestionData={suggestionObj}/>
+        return <Suggestion key={suggestionObj.id} suggdata={suggestionObj}/>
     }
     return (
         <div className="mt-4">
-            <p className="text-base text-gray-400 font-bold mb-4">
+            <p className="text-base text-gray-600 font-bold mb-4">
                 Suggestions for you
             </p>
 {

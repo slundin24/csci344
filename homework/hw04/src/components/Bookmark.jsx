@@ -37,9 +37,9 @@ setStateBookmarkId(null);
 
     return(
     <button 
-    ariaLabel="Unbookmark This Post"
-    ariaChecked="true"
-    ariaRole="toggle"
+    aria-label="Unbookmark This Post"
+    aria-checked="true"
+    role="toggle"
     onClick={deleteBookmark}>
         <i className="fas fa-bookmark"></i>
         </button>
@@ -49,9 +49,9 @@ setStateBookmarkId(null);
         return(
             <button
             
-            ariaLabel="Bookmark This Post"
-            ariaChecked="false"
-            ariaRole="toggle"
+            aria-label="Bookmark This Post"
+            aria-checked="false"
+            role="toggle"
             onClick={createBookmark}>
             <i className="far fa-bookmark"></i>
             </button>

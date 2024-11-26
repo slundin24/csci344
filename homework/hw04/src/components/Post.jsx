@@ -8,7 +8,7 @@ return (
     <section className="bg-white border mb-10">
    <div className="p-4 flex justify-between">
                 <h3 className="text-lg font-Comfortaa font-bold">{postData.user.username}</h3>
-                <button className="icon-button"><i className="fas fa-ellipsis-h"></i></button>
+                <button aria-label="icon button" className="icon-button"><i className="fas fa-ellipsis-h"></i></button>
             </div>
             <img src={postData.image_url} alt={postData.alt_text || "Post Photo"} width="300" height="300"
                 className="w-full bg-cover"></img>
@@ -18,8 +18,8 @@ return (
                     <div className="flex gap-2">
                        
                         <Like likeId={postData.current_user_like_id} postId={postData.id} token={token}/>
-                        <button><i className="far fa-comment"></i></button>
-                        <button><i className="far fa-paper-plane"></i></button>
+                        <button aria-label="comment"><i className="far fa-comment"></i></button>
+                        <button aria-label="share"><i className="far fa-paper-plane"></i></button>
                     </div>
                     <div>
                        
@@ -31,7 +31,7 @@ return (
                     <p className="flex gap-2">
                         <strong>{postData.user.username}</strong>
                         {postData.caption}
-                         <button className="button">more</button>
+                         <button aria-label="more button" className="button">more</button>
                     </p>
                 </div>
                 <p className="flex gap-2 text-sm mb-3">

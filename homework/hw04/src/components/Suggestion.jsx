@@ -1,23 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { getDataFromServer } from "../server-requests";
+import React from "react";
 
-export default function Suggestion({ token }) {
-    const [suggestion, setSuggestion] = useState(null);
+// display one suggestion
+export default function Suggestion({ suggdata }) {
     
-    async function getSuggestion(){
-        const data = await getDataFromServer(token, "/api/suggestions");
-        
-        setSuggestion(data);
-    }
+    return (
 
-    useEffect(() => {
-        getSuggestion();
-    }, []);
+        <section className="flex justify-between items-center mb-4 gap-2">
+        <img src={suggdata.thumb_url} alt="suggestion pictures" className="rounded-full" />
+        <div className="w-[180px]">
+            <p className="font-bold text-sm">{suggdata.username}</p>
+            <p className="text-gray-600 text-xs">suggested for you</p>
+        </div>
+        <button aria-label="follow button" className="text-blue-600 text-sm py-2">follow</button>
+    </section>
 
-    return (suggestion &&
-        <header className="flex gap-4 items-center">
-            <img src={suggestion.image_url} alt="Suggestion Picture" className="w-16 rounded-full" />
-            <h2 className="font-Comfortaa font-bold text-2xl">{suggestion.user.username}</h2>
-        </header>
     );
 }
