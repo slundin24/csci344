@@ -1,7 +1,7 @@
 import { getAccessToken } from "./utilities.js";
 const rootURL = "https://photo-app-secured.herokuapp.com";
 let token = null;
-let username = "sophie";
+let username = "webdev";
 let password = "password";
 
 async function initializeScreen() {
