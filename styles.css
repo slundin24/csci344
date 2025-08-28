@@ -1,9 +1,51 @@
-body{
-    background-color: rgb(149, 122, 195);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f6fc;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
 }
 
-nav{
+h1 {
+    text-align: center;
+    color: #4b2e83;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+nav.navbar {
     display: flex;
     flex-direction: column;
-    align-content:space-between;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+}
+
+.project a {
+    font-size: 1.25rem;
+    color: #4b2e83;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #555;
 }
